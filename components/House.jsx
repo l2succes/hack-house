@@ -1,29 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 
+/*
+  Designed by: Joanna Ngai
+  Original image: https://dribbble.com/shots/14118297-Villa
+*/
 export const House = () => {
-  // <script id="rendered-js">
-  // /*
-  //         Designed by: Joanna Ngai
-  //         Original image: https://dribbble.com/shots/14118297-Villa
-  // */
+  useEffect(() => {
+    const h = document.querySelector("#h");
+    const b = document.body;
 
-  // const h = document.querySelector("#h");
-  // const b = document.body;
+    let base = (e) => {
+      let x = e.pageX / window.innerWidth - 0.5;
+      let y = e.pageY / window.innerHeight - 0.5;
+      h.style.transform = `
+            perspective(20000px)
+            rotateX(${y * 10 + 75}deg)
+            rotateZ(${-x * 10 + 35}deg)
+            translateZ(-9vw)
+        `;
+    };
 
-  // let base = e => {
-  //   let x = e.pageX / window.innerWidth - 0.5;
-  //   let y = e.pageY / window.innerHeight - 0.5;
-  //   h.style.transform = `
-  //         perspective(20000px)
-  //         rotateX(${y * 10 + 75}deg)
-  //         rotateZ(${-x * 10 + 35}deg)
-  //         translateZ(-9vw)
-  //     `;
-  // };
+    b.addEventListener("pointermove", base);
 
-  // b.addEventListener("pointermove", base);
+    return () => {
+      b.removeEventListener("pointermove", base);
+    };
+  }, []);
 
-  //     </script>
   return (
     <>
       <div class="house" id="h">

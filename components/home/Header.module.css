@@ -1,0 +1,67 @@
+.logo {
+  background: url(/assets/mhh-logo.svg) no-repeat center;
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  z-index: 2;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.heroBackgroundInner {
+  position: absolute;
+  background: #c989c6;
+  width: 1500px;
+  height: 600px;
+  transform: rotate(140deg);
+  filter: blur(100px);
+  right: -80px;
+  top: 50px;
+}
+
+.heroBackground::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -250px;
+  left: -250px;
+  height: 800px;
+  width: 800px;
+  background: rgba(3, 206, 191);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.heroBackground::after {
+  content: "";
+  display: block;
+  background: rgba(3, 206, 191);
+  filter: blur(100px);
+  position: absolute;
+  bottom: -500px;
+  right: -500px;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  z-index: 1;
+}
