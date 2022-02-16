@@ -14,9 +14,28 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+
         <div className="container mx-auto my-16">
           <div className="mx-auto mb-8">
-            <h3 className="font-sans font-medium text-2xl my-4 text-center tracking-wider">
+            <h3 className="font-sans font-medium text-3xl my-4 text-center tracking-wider">
+              ROADMAP
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-4 gap-4">
+            <div className="">
+              <h3>March 2022</h3>
+              <ul>
+                <li>Launch NFT Collection</li>
+                <li>Initialize token distribution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto my-16">
+          <div className="mx-auto mb-8">
+            <h3 className="font-sans font-medium text-3xl my-4 text-center tracking-wider">
               MEMBERSHIPS
             </h3>
           </div>

@@ -9,11 +9,10 @@ export const MembershipCard: React.FC<MembershipCardProps> = (props) => {
   const { type } = props;
 
   const is1x = type === "1x";
-
   const logo = is1x ? "/assets/mhh-logo.svg" : "/assets/mhh-logo-color.svg";
 
   return (
-    <div className="bg-zinc-200	shadow-md max-w-full p-5 mt-[220px] rounded">
+    <div className="bg-zinc-200	shadow-md max-w-md mx-auto p-5 mt-[220px] rounded">
       <div
         className={cls(
           is1x ? "bg-black" : "bg-gray-100",
@@ -47,7 +46,7 @@ export const MembershipCard: React.FC<MembershipCardProps> = (props) => {
       </div>
 
       <h3 className="font-mono font-medium text-xl m-4 mt-10">
-        Noob Membership
+        {is1x ? "1x Hacker" : "10x Hacker"} Membership
       </h3>
       <span className="mx-4">0.5 ETH</span>
 
@@ -57,6 +56,12 @@ export const MembershipCard: React.FC<MembershipCardProps> = (props) => {
         <li className="mb-4">Free access to workshops and how-to sessions</li>
         <li className="mb-4">Intros to other house members</li>
       </ul>
+
+      <div className="mt-8 mx-4 mb-8">
+        <button className="bg-black text-white text-sm py-3 px-4 rounded">
+          Buy Membership
+        </button>
+      </div>
     </div>
   );
 };

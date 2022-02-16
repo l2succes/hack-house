@@ -26,8 +26,8 @@
 /***************/
 .house {
   position: absolute;
-  width: 36vw;
-  height: 24vw;
+  width: 443px;
+  height: 295px;
   transform: perspective(20000px) rotateX(75deg) rotateZ(35deg) translateZ(-9vw);
   transition: transform 0.1s linear;
 }
