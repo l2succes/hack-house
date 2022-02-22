@@ -16,7 +16,7 @@ export const Header = () => {
               <div className={cls(styles.logo, "my-5")}></div>
               <div className="py-2">
                 <h1 className="font-sans font-semibold text-4xl pb-4">
-                  Let's build the
+                  Let&apos;s build the
                   <br />
                   future together
                 </h1>
