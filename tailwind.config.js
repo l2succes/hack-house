@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Spartan", "sans-serif"],
+        sans: ["NB International Pro", "Spartan", "sans-serif"],
       },
     },
   },

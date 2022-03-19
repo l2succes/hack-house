@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "NB International Pro";
+  src: url("fonts/NB-International-Pro-Regular.eot");
+  src: url("fonts/NB-International-Pro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/NB-International-Pro-Regular.woff") format("woff"),
+    url("fonts/NB-International-Pro-Regular.ttf") format("truetype"),
+    url("fonts/NB-International-Pro-Regular.svg#73391c4d64d4dfef1c5a99ff4df99657")
+      format("svg");
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url("fonts/NB-International-Pro-Light.eot");
+  src: url("fonts/NB-International-Pro-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/NB-International-Pro-Light.woff") format("woff"),
+    url("fonts/NB-International-Pro-Light.ttf") format("truetype"),
+    url("fonts/NB-International-Pro-Light.svg#9fb1bd8312534123573e9a6705032d86")
+      format("svg");
+
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url("fonts/NB-International-Pro-Light-Italic.eot");
+  src: url("fonts/NB-International-Pro-Light-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/NB-International-Pro-Light-Italic.woff") format("woff"),
+    url("fonts/NB-International-Pro-Light-Italic.ttf") format("truetype"),
+    url("fonts/NB-International-Pro-Light-Italic.svg#8d90cf74fadb25ffcee502bb25ff54fd")
+      format("svg");
+
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url("fonts/NB-International-Pro-Italic.eot");
+  src: url("fonts/NB-International-Pro-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/NB-International-Pro-Italic.woff") format("woff"),
+    url("fonts/NB-International-Pro-Italic.ttf") format("truetype"),
+    url("fonts/NB-International-Pro-Italic.svg#cdbb83ebb85bf8ca320412c9a17c7fc2")
+      format("svg");
+
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url("fonts/NB-International-Pro-Bold.eot");
+  src: url("fonts/NB-International-Pro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/NB-International-Pro-Bold.woff") format("woff"),
+    url("fonts/NB-International-Pro-Bold.ttf") format("truetype"),
+    url("fonts/NB-International-Pro-Bold.svg#8638eb90c12ce5b9de0590a49bb33548")
+      format("svg");
+
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url("fonts/NB-International-Pro-Bold-Italic.eot");
+  src: url("fonts/NB-International-Pro-Bold-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/NB-International-Pro-Bold-Italic.woff") format("woff"),
+    url("fonts/NB-International-Pro-Bold-Italic.ttf") format("truetype"),
+    url("fonts/NB-International-Pro-Bold-Italic.svg#c8efed6ec75822ef73e31a6860039163")
+      format("svg");
+
+  font-style: italic;
+  font-weight: 700;
+}

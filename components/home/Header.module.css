@@ -1,8 +1,8 @@
 .logo {
   background: url(/assets/mhh-logo.svg) no-repeat center;
   background-size: contain;
-  height: 150px;
-  width: 150px;
+  height: 80px;
+  width: 80px;
   z-index: 2;
 }
 
@@ -14,7 +14,6 @@
 
 .heroContent {
   position: relative;
-  z-index: 2;
   color: white;
 }
 
