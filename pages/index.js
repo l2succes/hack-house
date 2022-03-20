@@ -16,7 +16,7 @@ export default function Home() {
         <Header />
 
         <div className="bg-[#F6F8FA]">
-          <div className="container mx-auto py-16">
+          <div className="container max-w-screen-xl mx-auto py-16">
             <div className="mx-auto mb-8">
               <div className="my-4">
                 <h3 className="text-gray-300 flex items-center font-light text-lg">
@@ -76,15 +76,15 @@ export default function Home() {
 
               <div className="grid grid-cols-3 mx-10 my-20">
                 <div className="col-span-1 p-4 flex flex-col items-center">
-                  <img src="http://placehold.jp/360x390.png" />
+                  <div className="bg-[url('/assets/wynwood-1.jpeg')] bg-cover bg-center w-[360px] h-[390px]"></div>
                   <div className="my-5">410-422 NW 25TH ST</div>
                 </div>
                 <div className="col-span-1 p-4 flex flex-col items-center">
-                  <img src="http://placehold.jp/360x390.png" />
+                  <div className="bg-[url('/assets/wynwood-2.jpeg')] bg-cover bg-center w-[360px] h-[390px]"></div>
                   <div className="my-5">2734 NW 1ST AVE</div>
                 </div>
                 <div className="col-span-1 p-4 flex flex-col items-center">
-                  <img src="http://placehold.jp/360x390.png" />
+                  <div className="bg-[url('/assets/wynwood-3.jpeg')] bg-cover bg-center w-[360px] h-[390px]"></div>
                   <div className="my-5">2534 N MIAMI AVE</div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container mx-auto my-16">
+        <div className="container max-w-screen-xl mx-auto my-16">
           <div className="mx-auto mb-20 flex">
             <div className="flex-1">
               <h3 className="text-8xl my-4 font-bold md:text-7xl">
@@ -128,6 +128,48 @@ export default function Home() {
               <MembershipCard type="10x" />
             </div>
           </div> */}
+        </div>
+
+        <div className="bg-[url('/assets/membership-section-bg.png')]">
+          <div className="container max-w-screen-xl mx-auto py-16">
+            <div className="flex">
+              <div className="flex-1">
+                <div className="flex flex-col">
+                  <h3 className="text-gray-300 flex items-center font-light text-lg ">
+                    <span className="mr-4">03/</span>
+                    <span className="bg-gray-300 h-[1px] w-[130px]"></span>
+                    <span className="ml-2">Join our Waiting List</span>
+                  </h3>
+                </div>
+
+                <h2 className="mt-10 text-6xl font-bold tracking-wide">
+                  Get the first 200 memberships
+                </h2>
+
+                <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
+                  The space is meant to serve the hacker community in Miami:
+                  entrepreneurs, designers, software engineers. This will be a
+                  space to work and collaborate with others. As well as host
+                  hackathons, events.
+                </p>
+              </div>
+              <div className="flex-1 p-20">
+                <img src="/assets/membership-images.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-black">
+          <div className="container max-w-screen-xl mx-auto py-16">
+            <div className="flex flex-col">
+              <h3 className="text-gray-200 flex items-center font-light text-lg ">
+                <span className="mr-4">04/</span>
+                <span className="bg-gray-200 h-[1px] w-[130px]"></span>
+                <span className="ml-2">Roadmap</span>
+              </h3>
+            </div>
+          </div>
         </div>
       </main>
       <footer></footer>

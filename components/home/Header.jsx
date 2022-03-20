@@ -8,10 +8,10 @@ export const Header = () => {
     <div className="relative overflow-hidden max-w-full pb-8">
       <div className={styles.heroBackground}></div>
       <div className={styles.heroBackgroundInner}></div>
-      <div className="inset-0 bg-black opacity-30 z-10 absolute"></div>
+      <div className="inset-0 bg-black opacity-50 z-10 absolute"></div>
 
       <div className={cls(styles.heroContent, "m-10 mt-5 py-2 z-20")}>
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-screen-xl">
           <div className="flex w-full justify-center mb-20">
             <div className={cls(styles.logo)}></div>
             <div className="flex flex-grow"></div>
