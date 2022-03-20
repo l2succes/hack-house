@@ -1,16 +1,13 @@
 import Head from "next/head";
 import { Header } from "../components/home/Header";
 import { MembershipInfo } from "../components/home/MembershipInfo";
+import styled from "styled-components";
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Hack House: Miami</title>
-        <style>
-          @import
-          url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600&display=swap");
-        </style>
       </Head>
       <main>
         <Header />
@@ -130,7 +127,7 @@ export default function Home() {
           </div> */}
         </div>
 
-        <div className="bg-[url('/assets/membership-section-bg.png')]">
+        <div className="bg-[url('/assets/membership-section-bg.png')] bg-cover">
           <div className="container max-w-screen-xl mx-auto py-16">
             <div className="flex">
               <div className="flex-1">
@@ -162,17 +159,94 @@ export default function Home() {
 
         <div className="bg-black">
           <div className="container max-w-screen-xl mx-auto py-16">
-            <div className="flex flex-col">
-              <h3 className="text-gray-200 flex items-center font-light text-lg ">
+            <div
+              className="flex flex-col items-center
+            "
+            >
+              <h3 className="text-gray-500 flex items-center font-light text-lg ">
                 <span className="mr-4">04/</span>
-                <span className="bg-gray-200 h-[1px] w-[130px]"></span>
+                <span className="bg-gray-500 h-[1px] w-[130px]"></span>
                 <span className="ml-2">Roadmap</span>
               </h3>
+            </div>
+
+            <h2 className="mt-10 text-7xl font-bold tracking-wide text-white text-center">
+              Roadmap
+            </h2>
+
+            <div className="my-20">
+              <div>
+                <div className="w-full h-[15px] relative">
+                  <RoadmapGradient className="inset-0 absolute bg-gradient-to-r from-[#BE2593] to-[#03CEBF]"></RoadmapGradient>
+                  <div className="relative ml-44">
+                    <div className="w-10 h-10 bg-white rounded-full absolute -top-3"></div>
+                    <div className="w-8 h-8 bg-gray-400 rounded-full absolute left-1/4 -top-2"></div>
+                    <div className="w-8 h-8 bg-gray-400 rounded-full absolute left-1/2 -top-2"></div>
+                    <div className="w-8 h-8 bg-gray-400 rounded-full absolute left-3/4 -top-2"></div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-4 text-neutral-600 mt-10 ml-12">
+                  <div className="col-span-1 text-neutral-400">
+                    <ul>
+                      <li>Launch NFT Collection</li>
+                      <li>Start Discord</li>
+                    </ul>
+                  </div>
+                  <div className="col-span-1">
+                    <ul>
+                      <li>Launch NFT Collection</li>
+                      <li>Start Discord</li>
+                    </ul>
+                  </div>
+                  <div className="col-span-1">
+                    <ul>
+                      <li>Launch NFT Collection</li>
+                      <li>Start Discord</li>
+                    </ul>
+                  </div>
+                  <div className="col-span-1">
+                    <ul>
+                      <li>Launch NFT Collection</li>
+                      <li>Start Discord</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div className="container max-w-screen-xl my-20 mx-auto">
+          <div className="grid grid-cols-6">
+            <div className="col-span-3">
+              <img
+                src="/assets/mhh-logo-color.svg"
+                className="w-[100px] h-[100px]"
+              />
+
+              <p className="font-sans font-light text-neutral-400 text-sm max-w-sm">
+                The first on-chain co-working space <br />
+                for builders and hustlers out in Miami
+              </p>
+            </div>
+          </div>
+          <div className="border-t-neutral-200 border-solid border-t-[1px] w-full mt-10 pt-5">
+            <span className="font-light text-neutral-600">
+              Miami Hack House LLC, All rights reserved
+            </span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
+
+const RoadmapGradient = styled.div`
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255) 50%,
+    transparent 100%
+  );
+`;
