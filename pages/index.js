@@ -230,6 +230,35 @@ export default function Home() {
                 for builders and hustlers out in Miami
               </p>
             </div>
+            <div className="col-span-1 antialiased">
+              <ul className="font-light">
+                <li className="mb-4 text-lg font-bold text-neutral-700 antialiased">
+                  Company
+                </li>
+                <li className="mb-2 text-neutral-400">Careers</li>
+                <li className="mb-2 text-neutral-400">About Us</li>
+                <li className="mb-2 text-neutral-400">Privacy Policy</li>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <ul className="font-light">
+                <li className="mb-4 text-lg font-bold text-neutral-700 antialiased">
+                  Discover
+                </li>
+                <li className="mb-2 text-neutral-400">FAQ</li>
+                <li className="mb-2 text-neutral-400">Becoming a Member</li>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <ul className="font-light">
+                <li className="mb-4 text-lg font-bold text-neutral-700 antialiased">
+                  Information
+                </li>
+                <li className="mb-2 text-neutral-400">Blog</li>
+                <li className="mb-2 text-neutral-400">Support</li>
+                <li className="mb-2 text-neutral-400">Contact Us</li>
+              </ul>
+            </div>
           </div>
           <div className="border-t-neutral-200 border-solid border-t-[1px] w-full mt-10 pt-5">
             <span className="font-light text-neutral-600">
