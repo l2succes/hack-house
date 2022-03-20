@@ -29,22 +29,28 @@ export const Header = () => {
               </menu>
             </div>
           </div>
-          <div className="mt-4 align-middle">
-            <div className="py-2 text-center">
-              <h1 className="font-sans font-semibold text-7xl pb-4">
-                Let&apos;s build the
-                <br />
-                future together
-              </h1>
+          <div className="mt-4">
+            <div className="flex">
+              <div className="py-2 antialiased flex-grow md:text-center lg:text-left">
+                <h1 className="font-sans font-semibold text-7xl pb-4">
+                  Let&apos;s build the
+                  <br />
+                  future together
+                </h1>
 
-              <p className="font-sans font-normal text-xl mt-4 max-w-md mx-auto">
-                The first on-chain co-working space for builders and hustlers
-                out in Miami
-              </p>
+                <p className="font-sans font-normal text-gray-300 text-xl mt-4">
+                  The first on-chain co-working space for
+                  <br />
+                  builders and hustlers out in Miami
+                </p>
 
-              <button className="shadow-sm rounded-md bg-indigo-800	text-red-200 py-3 px-6 mt-8 mb-4">
-                Join the Waitlist
-              </button>
+                <button className="shadow-sm rounded-md bg-indigo-800	text-red-200 py-3 px-6 mt-8 mb-4">
+                  Join the Waitlist
+                </button>
+              </div>
+              <div className="md:hidden lg:block">
+                <House />
+              </div>
             </div>
           </div>
         </div>

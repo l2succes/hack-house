@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Header } from "../components/home/Header";
 import { MembershipInfo } from "../components/home/MembershipInfo";
+import { House } from "../components/House";
 import styled from "styled-components";
 
 export default function Home() {
@@ -45,10 +46,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col-span-1 p-4">
-                    <div className="w-[350px] h-[350px] relative">
-                      {/* <House /> */}
-                    </div>
-                    <div className="w-[350px] h-[350px] rounded-full bg-gray-200 hidden"></div>
+                    <div className="w-[350px] h-[350px] rounded-full bg-gray-200"></div>
                   </div>
                 </div>
               </div>
@@ -116,15 +114,6 @@ export default function Home() {
           </div>
 
           <MembershipInfo />
-          {/* <div className="grid grid-cols-4 gap-4 relative">
-            
-            <div className="col-span-2">
-              <MembershipCard type="1x" />
-            </div>
-            <div className="col-span-2">
-              <MembershipCard type="10x" />
-            </div>
-          </div> */}
         </div>
 
         <div className="bg-[url('/assets/membership-section-bg.png')] bg-cover">

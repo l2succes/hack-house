@@ -25,10 +25,10 @@
 
 /***************/
 .house {
-  position: absolute;
-  width: 443px;
-  height: 295px;
-  transform: perspective(20000px) rotateX(75deg) rotateZ(35deg) translateZ(-9vw);
+  width: 450px;
+  height: 300px;
+  transform: perspective(10000px) rotateX(75deg) rotateZ(35deg) translateZ(-9vw)
+    scale3d(0.7, 0.7, 0.7);
   transition: transform 0.1s linear;
 }
 

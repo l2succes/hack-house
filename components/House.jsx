@@ -13,10 +13,11 @@ export const House = () => {
       let x = e.pageX / window.innerWidth - 0.5;
       let y = e.pageY / window.innerHeight - 0.5;
       h.style.transform = `
-            perspective(20000px)
+            perspective(10000px)
             rotateX(${y * 10 + 75}deg)
             rotateZ(${-x * 10 + 35}deg)
             translateZ(-9vw)
+            scale3d(0.7, 0.7, 0.7)
         `;
     };
 
