@@ -112,7 +112,7 @@ export default function Home() {
 
             <div className="my-20">
               <div>
-                <div className="w-full h-[15px] relative">
+                <div className="w-full h-[8px] lg:h-[15px] relative flex items-center">
                   <div
                     className="inset-0 absolute bg-gradient-to-r from-[#BE2593] to-[#03CEBF]"
                     style={{
@@ -121,48 +121,44 @@ export default function Home() {
                   ></div>
                   <div className="flex w-full">
                     <div className="flex flex-1 flex-col items-center">
-                      <div className="w-10 h-10 bg-white rounded-full"></div>
+                      <div className="w-7 h-7 lg:w-10 lg:h-10 bg-white rounded-full"></div>
                     </div>
-                    <div className="flex flex-1 flex-col items-center">
+                    <div className="flex flex-1 flex-col items-center justify-center">
                       <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
                     </div>
-                    <div className="flex flex-1 flex-col items-center">
+                    <div className="flex flex-1 flex-col items-center justify-center">
                       <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
                     </div>
-                    <div className="flex flex-1 flex-col items-center">
+                    <div className="flex flex-1 flex-col items-center justify-center">
                       <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
                     </div>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-4 text-neutral-600 mt-10 antialiased text-center">
-                  <div className="col-span-1 text-neutral-400">
+                  <div className="col-span-1 mt-20 lg:mt-0 text-neutral-400">
                     <div className="font-bold mb-10 text-lg">Q1 2022</div>
-                    <ul>
+                    <ul className="text-left ml-10 lg:ml-20">
                       <li>Launch NFT Collection</li>
                       <li>Start Discord</li>
                     </ul>
                   </div>
-                  <div className="col-span-1">
+                  <div className="col-span-1 mt-20 lg:mt-0">
                     <div className="font-bold mb-10">Q2 2022</div>
-                    <ul>
-                      <li>Launch NFT Collection</li>
-                      <li>Start Discord</li>
+                    <ul className="text-left ml-10 lg:ml-20">
+                      <li>Launch DAO</li>
+                      <li>Deploy $HK token on Polygon testnet</li>
                     </ul>
                   </div>
-                  <div className="col-span-1">
+                  <div className="col-span-1 mt-20 lg:mt-0">
                     <div className="font-bold mb-10">Q3 2022</div>
-                    <ul>
-                      <li>Launch NFT Collection</li>
-                      <li>Start Discord</li>
+                    <ul className="text-left ml-10 lg:ml-20">
+                      <li>Begin Construction</li>
                     </ul>
                   </div>
-                  <div className="col-span-1">
+                  <div className="col-span-1 mt-20 lg:mt-0">
                     <div className="font-bold mb-10">Q4 2022</div>
-                    <ul>
-                      <li>Launch NFT Collection</li>
-                      <li>Start Discord</li>
-                    </ul>
+                    <ul className="text-left ml-10 lg:ml-20"></ul>
                   </div>
                 </div>
               </div>
