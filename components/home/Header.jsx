@@ -31,7 +31,7 @@ export const Header = () => {
           </div>
           <div className="mt-4">
             <div className="flex">
-              <div className="py-2 antialiased flex-grow md:text-center lg:text-left">
+              <div className="py-2 antialiased flex-grow text-center lg:text-left">
                 <h1 className="font-sans font-semibold text-7xl pb-4">
                   Let&apos;s build the
                   <br />
@@ -44,11 +44,11 @@ export const Header = () => {
                   builders and hustlers out in Miami
                 </p>
 
-                <button className="shadow-sm rounded-md bg-indigo-800	text-red-200 py-3 px-6 mt-8 mb-4">
+                <button className="shadow-sm rounded-md bg-white text-black py-4 px-8 mt-8 mb-4">
                   Join the Waitlist
                 </button>
               </div>
-              <div className="md:hidden lg:block">
+              <div className="hidden lg:block">
                 <House />
               </div>
             </div>

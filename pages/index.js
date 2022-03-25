@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { Header } from "../components/home/Header";
 import { MembershipInfo } from "../components/home/MembershipInfo";
-import { House } from "../components/House";
-import styled from "styled-components";
+import { WhatISMHH } from "../components/home/What";
 
 export default function Home() {
   return (
@@ -16,40 +15,7 @@ export default function Home() {
         <div className="bg-[#F6F8FA]">
           <div className="container max-w-screen-xl mx-auto py-16">
             <div className="mx-auto mb-8">
-              <div className="my-4">
-                <h3 className="text-gray-300 flex items-center font-light text-lg">
-                  <span className="mr-4">00/</span>
-                  <span className="bg-gray-300 h-[1px] w-[130px]"></span>
-                  <span className="ml-2">What is Miami Hack House</span>
-                </h3>
-                <div className="grid grid-cols-3">
-                  <div className="col-span-2">
-                    <h2 className="mt-10 text-4xl font-bold tracking-wide">
-                      Co-Working + Web3 +{" "}
-                      <span className="text-[#BE2593]">Miami</span>
-                    </h2>
-
-                    <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed pr-10">
-                      We’re building the first on-chain co-working space for
-                      creators, engineers, designers. Miami have a permanent
-                      space to connect with other Miami locals or traveling
-                      entrepreneurs. As a members only community, we will take
-                      and review applications to join.
-                    </p>
-
-                    <div className="flex my-10 text-lg">
-                      <div className="text-[#BE2593] underline mr-10">
-                        Physical House
-                      </div>
-
-                      <div className="text-neutral-400">Virtual House</div>
-                    </div>
-                  </div>
-                  <div className="col-span-1 p-4">
-                    <div className="w-[350px] h-[350px] rounded-full bg-gray-200"></div>
-                  </div>
-                </div>
-              </div>
+              <WhatISMHH />
             </div>
 
             <div className="mx-auto mb-8 text-center">
@@ -69,7 +35,7 @@ export default function Home() {
                 neighborhood.
               </p>
 
-              <div className="grid grid-cols-3 mx-10 my-20">
+              <div className="grid grid-cols-1 lg:grid-cols-3 mx-10 my-20">
                 <div className="col-span-1 p-4 flex flex-col items-center">
                   <div className="bg-[url('/assets/wynwood-1.jpeg')] bg-cover bg-center w-[360px] h-[390px]"></div>
                   <div className="my-5">410-422 NW 25TH ST</div>
@@ -88,16 +54,8 @@ export default function Home() {
         </div>
 
         <div className="container max-w-screen-xl mx-auto my-16">
-          <div className="mx-auto mb-20 flex">
+          <div className="mx-auto mb-20 flex flex-col mx-10">
             <div className="flex-1">
-              <h3 className="text-8xl my-4 font-bold md:text-7xl">
-                <div className="bg-gradient-to-r from-[#BE2593] to-transparent pl-2">
-                  Be part
-                </div>
-                <div className="pl-2">of the gang</div>
-              </h3>
-            </div>
-            <div className="flex-1 ml-10 mt-5">
               <div className="flex flex-col">
                 <h3 className="text-gray-300 flex items-center font-light text-lg ">
                   <span className="mr-4">02/</span>
@@ -105,6 +63,12 @@ export default function Home() {
                   <span className="ml-2">Membership</span>
                 </h3>
               </div>
+              <h3 className="text-8xl my-4 font-bold md:text-7xl">
+                <div className="">Be part</div>
+                <div className="">of the gang</div>
+              </h3>
+            </div>
+            <div className="flex-1 ml-10 mt-5">
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
                 The membership cards would be minted as NFTs and would be
                 utilized as proof of a member being able to enter the space and
@@ -118,7 +82,7 @@ export default function Home() {
 
         <div className="bg-[url('/assets/membership-section-bg.png')] bg-cover">
           <div className="container max-w-screen-xl mx-auto py-16">
-            <div className="flex">
+            <div className="flex flex-col lg:flex-row">
               <div className="flex-1">
                 <div className="flex flex-col">
                   <h3 className="text-gray-300 flex items-center font-light text-lg ">
@@ -159,14 +123,19 @@ export default function Home() {
               </h3>
             </div>
 
-            <h2 className="mt-10 text-7xl font-bold tracking-wide text-white text-center">
+            <h2 className="mt-10 text-7xl font-bold tracking-wide text-transparent text-center bg-clip-text bg-gradient-to-t from-[#BE2593] to-[#03CEBF]">
               Roadmap
             </h2>
 
             <div className="my-20">
               <div>
                 <div className="w-full h-[15px] relative">
-                  <RoadmapGradient className="inset-0 absolute bg-gradient-to-r from-[#BE2593] to-[#03CEBF]"></RoadmapGradient>
+                  <div
+                    className="inset-0 absolute bg-gradient-to-r from-[#BE2593] to-[#03CEBF]"
+                    style={{
+                      "-webkit-mask-image": `linear-gradient(to right, transparent, rgba(255, 255, 255) 50%, transparent 100%)`,
+                    }}
+                  ></div>
                   <div className="relative ml-44">
                     <div className="w-10 h-10 bg-white rounded-full absolute -top-3"></div>
                     <div className="w-8 h-8 bg-gray-400 rounded-full absolute left-1/4 -top-2"></div>
@@ -260,11 +229,4 @@ export default function Home() {
   );
 }
 
-const RoadmapGradient = styled.div`
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255) 50%,
-    transparent 100%
-  );
-`;
+// const RoadmapGradient = styled.div``;
