@@ -23,19 +23,11 @@ export default function Home() {
 
         <div className="bg-[#F6F8FA]">
           <div className="container max-w-screen-xl mx-auto py-10">
-            <div
-              className="mx-auto mb-8"
-              data-sal="slide-up"
-              data-sal-delay="300"
-            >
+            <div className="mx-auto mb-8">
               <WhatISMHH />
             </div>
 
-            <div
-              className="mx-auto mt-20 text-center"
-              data-sal="slide-up"
-              data-sal-delay="300"
-            >
+            <div className="mx-auto mt-20 text-center">
               <div className="flex items-center flex-col">
                 <SectionHeader number="2" title="Where?" />
               </div>
@@ -49,15 +41,27 @@ export default function Home() {
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-3 mx-10 my-10">
-                <div className="col-span-1 p-4 flex flex-col items-center">
+                <div
+                  className="col-span-1 p-4 flex flex-col items-center"
+                  data-sal="slide-up"
+                  data-sal-delay="300"
+                >
                   <div className="bg-[url('/assets/wynwood-1.jpeg')] bg-cover bg-center w-full pb-[100%]"></div>
                   <div className="my-5">410-422 NW 25TH ST</div>
                 </div>
-                <div className="col-span-1 p-4 flex flex-col items-center">
+                <div
+                  className="col-span-1 p-4 flex flex-col items-center"
+                  data-sal="slide-up"
+                  data-sal-delay="300"
+                >
                   <div className="bg-[url('/assets/wynwood-2.jpeg')] bg-cover bg-center w-full pb-[100%]"></div>
                   <div className="my-5">2734 NW 1ST AVE</div>
                 </div>
-                <div className="col-span-1 p-4 flex flex-col items-center">
+                <div
+                  className="col-span-1 p-4 flex flex-col items-center"
+                  data-sal="slide-up"
+                  data-sal-delay="300"
+                >
                   <div className="bg-[url('/assets/wynwood-3.jpeg')] bg-cover bg-center w-full pb-[100%]"></div>
                   <div className="my-5">2534 N MIAMI AVE</div>
                 </div>
@@ -66,11 +70,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          className="container max-w-screen-xl mx-auto my-16"
-          data-sal="slide-up"
-          data-sal-delay="300"
-        >
+        <div className="container max-w-screen-xl mx-auto my-16">
           <div className="mx-auto mb-20 flex flex-col lg:flex-row-reverse">
             <div className="flex-1 text-center lg:text-left">
               <div className="flex flex-col items-center lg:items-start">
@@ -92,11 +92,7 @@ export default function Home() {
         </div>
 
         <div className="bg-[url('/assets/membership-section-bg.png')] bg-cover">
-          <div
-            className="container max-w-screen-xl mx-auto py-16"
-            data-sal="slide-up"
-            data-sal-delay="300"
-          >
+          <div className="container max-w-screen-xl mx-auto py-16">
             <div className="flex flex-col lg:flex-row text-center lg:text-left">
               <div className="flex-1">
                 <div className="flex flex-col items-center lg:items-start">
@@ -122,11 +118,7 @@ export default function Home() {
         </div>
 
         <div className="bg-black">
-          <div
-            className="container max-w-screen-xl mx-auto py-16"
-            data-sal="slide-up"
-            data-sal-delay="300"
-          >
+          <div className="container max-w-screen-xl mx-auto py-16">
             <div
               className="flex flex-col items-center
             "

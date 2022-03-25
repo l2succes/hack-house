@@ -51,7 +51,7 @@ export const Header = () => {
                 <button
                   className="shadow-sm rounded-md bg-white text-black py-4 px-8 mt-12"
                   data-sal="slide-up"
-                  data-sal-delay="500"
+                  data-sal-delay="600"
                 >
                   Join the Waitlist
                 </button>
@@ -59,7 +59,7 @@ export const Header = () => {
               <div
                 className="hidden lg:block"
                 data-sal="fade"
-                data-sal-delay="1000"
+                data-sal-delay="100"
               >
                 <House />
               </div>
