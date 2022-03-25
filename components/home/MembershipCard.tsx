@@ -16,12 +16,12 @@ export const MembershipCard: React.FC<MembershipCardProps> = (props) => {
       <div
         className={cls(
           is1x ? "bg-black" : "bg-gray-100",
-          "w-[404px] h-[255px] rounded-lg shadow-lg mx-auto mt-[-200px] z-10"
+          "max-w-[404px] max-h-[255px] rounded-lg shadow-lg mx-auto mt-[-200px] z-10"
         )}
       >
         <div className="flex flex-col">
           <div className="mx-5 pt-3">
-            <img src={logo} className="w-[80px] h-[100px] " />
+            <img src={logo} className="w-[10vw] max-w-[80px] max-h-[100px] " />
           </div>
 
           <div className="flex mx-5 mt-24 text-sm">
@@ -38,6 +38,7 @@ export const MembershipCard: React.FC<MembershipCardProps> = (props) => {
               <img
                 width="60px"
                 height="60px"
+                className="max-w-[60px] max-h-[60px] w-[10vw]"
                 src="https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"
               />
             </div>

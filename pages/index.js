@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/home/Header";
-import { MembershipInfo } from "../components/home/MembershipInfo";
+
 import { MembershipCard } from "../components/home/MembershipCard";
 import { WhatISMHH } from "../components/home/What";
 
@@ -19,7 +19,7 @@ export default function Home() {
               <WhatISMHH />
             </div>
 
-            <div className="mx-auto mb-8 text-center">
+            <div className="mx-auto mb-8 mt-20 text-center">
               <div className="flex items-center flex-col">
                 <h3 className="text-gray-300 flex items-center font-light text-lg ">
                   <span className="mr-4">01/</span>
@@ -27,7 +27,7 @@ export default function Home() {
                   <span className="ml-2">Where?</span>
                 </h3>
               </div>
-              <h2 className="mt-10 text-4xl font-bold tracking-wide">
+              <h2 className="mt-10 text-5xl font-bold tracking-wide mx-20">
                 Wynwood is the place
               </h2>
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed max-w-4xl mx-auto px-10 lg:px-0">
@@ -64,7 +64,9 @@ export default function Home() {
                   <span className="ml-2">Membership</span>
                 </h3>
               </div>
-              <h3 className="text-5xl my-4 font-bold">Be part of the gang</h3>
+              <h3 className="text-5xl my-4 font-bold mx-20">
+                Be part of the gang
+              </h3>
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
                 The membership cards would be minted as NFTs and would be
                 utilized as proof of a member being able to enter the space and
@@ -89,7 +91,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <h2 className="mt-10 text-5xl font-bold tracking-wide">
+                <h2 className="mt-10 text-5xl font-bold tracking-wide mx-20">
                   Get the first 200 memberships
                 </h2>
 
@@ -100,7 +102,7 @@ export default function Home() {
                   hackathons, events.
                 </p>
               </div>
-              <div className="flex-1 p-20">
+              <div className="flex-1 p-20 mx-auto">
                 <img src="/assets/membership-images.png" />
               </div>
             </div>
@@ -120,7 +122,7 @@ export default function Home() {
               </h3>
             </div>
 
-            <h2 className="mt-10 text-7xl font-bold tracking-wide text-transparent text-center bg-clip-text bg-gradient-to-t from-[#BE2593] to-[#03CEBF]">
+            <h2 className="mt-10 text-5xl lg:text-7xl font-bold tracking-wide text-transparent text-center bg-clip-text bg-gradient-to-r from-[#BE2593] to-[#03CEBF]">
               Roadmap
             </h2>
 
@@ -133,33 +135,46 @@ export default function Home() {
                       "-webkit-mask-image": `linear-gradient(to right, transparent, rgba(255, 255, 255) 50%, transparent 100%)`,
                     }}
                   ></div>
-                  <div className="relative ml-44">
-                    <div className="w-10 h-10 bg-white rounded-full absolute -top-3"></div>
-                    <div className="w-8 h-8 bg-gray-400 rounded-full absolute left-1/4 -top-2"></div>
-                    <div className="w-8 h-8 bg-gray-400 rounded-full absolute left-1/2 -top-2"></div>
-                    <div className="w-8 h-8 bg-gray-400 rounded-full absolute left-3/4 -top-2"></div>
+                  <div className="flex w-full">
+                    <div className="flex flex-1 flex-col items-center">
+                      <div className="w-10 h-10 bg-white rounded-full"></div>
+                    </div>
+                    <div className="flex flex-1 flex-col items-center">
+                      <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <div className="flex flex-1 flex-col items-center">
+                      <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <div className="flex flex-1 flex-col items-center">
+                      <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
+                    </div>
                   </div>
                 </div>
-                <div className="grid grid-cols-4 text-neutral-600 mt-10 ml-12">
+
+                <div className="grid grid-cols-4 text-neutral-600 mt-10 antialiased text-center">
                   <div className="col-span-1 text-neutral-400">
+                    <div className="font-bold mb-10 text-lg">Q1 2022</div>
                     <ul>
                       <li>Launch NFT Collection</li>
                       <li>Start Discord</li>
                     </ul>
                   </div>
                   <div className="col-span-1">
+                    <div className="font-bold mb-10">Q2 2022</div>
                     <ul>
                       <li>Launch NFT Collection</li>
                       <li>Start Discord</li>
                     </ul>
                   </div>
                   <div className="col-span-1">
+                    <div className="font-bold mb-10">Q3 2022</div>
                     <ul>
                       <li>Launch NFT Collection</li>
                       <li>Start Discord</li>
                     </ul>
                   </div>
                   <div className="col-span-1">
+                    <div className="font-bold mb-10">Q4 2022</div>
                     <ul>
                       <li>Launch NFT Collection</li>
                       <li>Start Discord</li>
