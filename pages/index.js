@@ -14,12 +14,12 @@ export default function Home() {
         <Header />
 
         <div className="bg-[#F6F8FA]">
-          <div className="container max-w-screen-xl mx-auto py-16">
+          <div className="container max-w-screen-xl mx-auto py-10">
             <div className="mx-auto mb-8">
               <WhatISMHH />
             </div>
 
-            <div className="mx-auto mb-8 mt-20 text-center">
+            <div className="mx-auto mt-20 text-center">
               <div className="flex items-center flex-col">
                 <SectionHeader number="2" title="Where?" />
               </div>
@@ -32,7 +32,7 @@ export default function Home() {
                 neighborhood.
               </p>
 
-              <div className="grid grid-cols-1 lg:grid-cols-3 mx-10 my-20">
+              <div className="grid grid-cols-1 lg:grid-cols-3 mx-10 my-10">
                 <div className="col-span-1 p-4 flex flex-col items-center">
                   <div className="bg-[url('/assets/wynwood-1.jpeg')] bg-cover bg-center w-full pb-[100%]"></div>
                   <div className="my-5">410-422 NW 25TH ST</div>
@@ -59,13 +59,13 @@ export default function Home() {
               <h3 className="text-4xl my-4 font-bold mx-10 lg:mx-0">
                 Be part of the gang
               </h3>
-              <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
+              <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed px-10 lg:px-0">
                 The membership cards would be minted as NFTs and would be
                 utilized as proof of a member being able to enter the space and
                 access to the space.
               </p>
             </div>
-            <div className="flex-1 ml-0 lg:ml-10 mt-5">
+            <div className="flex-1 mx-5 lg:mx-10 mt-5">
               <MembershipCard type="1x" />
             </div>
           </div>
