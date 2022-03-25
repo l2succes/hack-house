@@ -11,7 +11,7 @@ export const WhatISMHH = () => {
             Co-Working + Web3 + <span className="text-[#BE2593]">Miami</span>
           </h2>
 
-          <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed pr-10">
+          <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed px-10 lg:px-0 lg:pr-10">
             We’re building the first on-chain co-working space for creators,
             engineers, designers. Miami have a permanent space to connect with
             other Miami locals or traveling entrepreneurs. As a members only
@@ -30,7 +30,7 @@ export const WhatISMHH = () => {
         </div>
 
         <div className="col-span-1 p-4">
-          <div className="w-[350px] h-[350px] rounded-full bg-gray-200 bg-[url('/assets/office-pic.jpg')] bg-cover bg-center"></div>
+          <div className="w-[350px] h-[350px] rounded-full bg-gray-200 bg-[url('/assets/office-pic.jpg')] bg-cover bg-center mx-auto"></div>
         </div>
       </div>
     </div>

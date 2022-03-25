@@ -32,13 +32,13 @@ export const Header = () => {
           <div className="mt-4">
             <div className="flex">
               <div className="py-2 antialiased flex-grow text-center lg:text-left">
-                <h1 className="font-sans font-semibold text-7xl pb-4">
+                <h1 className="font-sans font-semibold text-5xl lg:text-7xl pb-4">
                   Let&apos;s build the
                   <br />
                   future together
                 </h1>
 
-                <p className="font-sans font-normal text-gray-300 text-xl mt-4">
+                <p className="font-sans font-normal text-gray-300 text-md lg:text-xl mt-4">
                   The first on-chain co-working space for
                   <br />
                   builders and hustlers out in Miami

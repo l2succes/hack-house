@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Header } from "../components/home/Header";
 import { MembershipInfo } from "../components/home/MembershipInfo";
+import { MembershipCard } from "../components/home/MembershipCard";
 import { WhatISMHH } from "../components/home/What";
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
               <h2 className="mt-10 text-4xl font-bold tracking-wide">
                 Wynwood is the place
               </h2>
-              <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed max-w-4xl mx-auto">
+              <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed max-w-4xl mx-auto px-10 lg:px-0">
                 We chose Wynwood because it’s the perfect place to host a hacker
                 house with the street art, and up & coming feel of the
                 neighborhood.
@@ -54,37 +55,33 @@ export default function Home() {
         </div>
 
         <div className="container max-w-screen-xl mx-auto my-16">
-          <div className="mx-auto mb-20 flex flex-col mx-10">
-            <div className="flex-1">
-              <div className="flex flex-col">
+          <div className="mx-auto mb-20 flex flex-col lg:flex-row-reverse mx-10">
+            <div className="flex-1 text-center lg:text-left">
+              <div className="flex flex-col items-center lg:items-start">
                 <h3 className="text-gray-300 flex items-center font-light text-lg ">
                   <span className="mr-4">02/</span>
                   <span className="bg-gray-300 h-[1px] w-[130px]"></span>
                   <span className="ml-2">Membership</span>
                 </h3>
               </div>
-              <h3 className="text-8xl my-4 font-bold md:text-7xl">
-                <div className="">Be part</div>
-                <div className="">of the gang</div>
-              </h3>
-            </div>
-            <div className="flex-1 ml-10 mt-5">
+              <h3 className="text-5xl my-4 font-bold">Be part of the gang</h3>
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
                 The membership cards would be minted as NFTs and would be
                 utilized as proof of a member being able to enter the space and
                 access to the space.
               </p>
             </div>
+            <div className="flex-1 ml-0 lg:ml-10 mt-5">
+              <MembershipCard type="1x" />
+            </div>
           </div>
-
-          <MembershipInfo />
         </div>
 
         <div className="bg-[url('/assets/membership-section-bg.png')] bg-cover">
           <div className="container max-w-screen-xl mx-auto py-16">
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row text-center lg:text-left">
               <div className="flex-1">
-                <div className="flex flex-col">
+                <div className="flex flex-col items-center lg:items-start">
                   <h3 className="text-gray-300 flex items-center font-light text-lg ">
                     <span className="mr-4">03/</span>
                     <span className="bg-gray-300 h-[1px] w-[130px]"></span>
@@ -92,11 +89,11 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <h2 className="mt-10 text-6xl font-bold tracking-wide">
+                <h2 className="mt-10 text-5xl font-bold tracking-wide">
                   Get the first 200 memberships
                 </h2>
 
-                <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
+                <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed mx-10 lg:mx-0">
                   The space is meant to serve the hacker community in Miami:
                   entrepreneurs, designers, software engineers. This will be a
                   space to work and collaborate with others. As well as host
@@ -176,14 +173,14 @@ export default function Home() {
       </main>
       <footer>
         <div className="container max-w-screen-xl my-20 mx-auto">
-          <div className="grid grid-cols-6">
-            <div className="col-span-3">
+          <div className="grid grid-cols-3 lg:grid-cols-6 text-center lg:text-left">
+            <div className="col-span-3 mb-10">
               <img
                 src="/assets/mhh-logo-color.svg"
-                className="w-[100px] h-[100px]"
+                className="w-[100px] h-[100px] mx-auto lg:mx-0"
               />
 
-              <p className="font-sans font-light text-neutral-400 text-sm max-w-sm">
+              <p className="font-sans font-light text-neutral-400 text-sm max-w-sm text-center mx-auto lg:text-left lg:mx-0">
                 The first on-chain co-working space <br />
                 for builders and hustlers out in Miami
               </p>
@@ -218,7 +215,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="border-t-neutral-200 border-solid border-t-[1px] w-full mt-10 pt-5">
+          <div className="border-t-neutral-200 border-solid border-t-[1px] w-full mt-10 pt-5 text-center lg:text-left">
             <span className="font-light text-neutral-600">
               Miami Hack House LLC, All rights reserved
             </span>
