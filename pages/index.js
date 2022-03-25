@@ -9,7 +9,7 @@ import sal from "sal.js";
 export default function Home() {
   useEffect(() => {
     sal({
-      threshold: 0.2,
+      threshold: 0.1,
     });
   });
 
