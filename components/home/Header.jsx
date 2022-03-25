@@ -8,11 +8,11 @@ export const Header = () => {
     <div className="relative overflow-hidden max-w-full pb-8 bg-[url('/assets/header-bg.png')] bg-cover bg-center]">
       <div className={cls(styles.heroContent, "m-10 mt-5 py-2 z-20")}>
         <div className="container mx-auto max-w-screen-xl">
-          <div className="flex w-full justify-center mb-20">
+          <div className="flex flex-col lg:flex-row items-center w-full justify-center mb-20">
             <div className={cls(styles.logo)}></div>
             <div className="flex flex-grow"></div>
             <div className="flex items-center">
-              <menu className="text-sm lg:text-base flex justify-center self-center">
+              <menu className="text-sm lg:text-base justify-center self-center hidden lg:flex">
                 <li className="mx-1 lg:mx-4">
                   <a>Memberships</a>
                 </li>
@@ -40,7 +40,7 @@ export const Header = () => {
                   builders and hustlers out in Miami
                 </p>
 
-                <button className="shadow-sm rounded-md bg-white text-black py-4 px-8 mt-8 mb-4">
+                <button className="shadow-sm rounded-md bg-white text-black py-4 px-8 mt-12">
                   Join the Waitlist
                 </button>
               </div>
