@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/home/Header";
-
+import { SectionHeader } from "../components/home/SectionHeader";
 import { MembershipCard } from "../components/home/MembershipCard";
 import { WhatISMHH } from "../components/home/What";
 
@@ -21,13 +21,9 @@ export default function Home() {
 
             <div className="mx-auto mb-8 mt-20 text-center">
               <div className="flex items-center flex-col">
-                <h3 className="text-gray-300 flex items-center font-light text-lg ">
-                  <span className="mr-4">01/</span>
-                  <span className="bg-gray-300 h-[1px] w-[130px]"></span>
-                  <span className="ml-2">Where?</span>
-                </h3>
+                <SectionHeader number="2" title="Where?" />
               </div>
-              <h2 className="mt-10 text-4xl font-bold tracking-wide mx-10">
+              <h2 className="mt-10 text-4xl font-bold tracking-wide mx-10 lg:mx-0">
                 Wynwood is the place
               </h2>
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed max-w-4xl mx-auto px-10 lg:px-0">
@@ -38,15 +34,15 @@ export default function Home() {
 
               <div className="grid grid-cols-1 lg:grid-cols-3 mx-10 my-20">
                 <div className="col-span-1 p-4 flex flex-col items-center">
-                  <div className="bg-[url('/assets/wynwood-1.jpeg')] bg-cover bg-center w-[360px] h-[390px]"></div>
+                  <div className="bg-[url('/assets/wynwood-1.jpeg')] bg-cover bg-center w-full pb-[100%]"></div>
                   <div className="my-5">410-422 NW 25TH ST</div>
                 </div>
                 <div className="col-span-1 p-4 flex flex-col items-center">
-                  <div className="bg-[url('/assets/wynwood-2.jpeg')] bg-cover bg-center w-[360px] h-[390px]"></div>
+                  <div className="bg-[url('/assets/wynwood-2.jpeg')] bg-cover bg-center w-full pb-[100%]"></div>
                   <div className="my-5">2734 NW 1ST AVE</div>
                 </div>
                 <div className="col-span-1 p-4 flex flex-col items-center">
-                  <div className="bg-[url('/assets/wynwood-3.jpeg')] bg-cover bg-center w-[360px] h-[390px]"></div>
+                  <div className="bg-[url('/assets/wynwood-3.jpeg')] bg-cover bg-center w-full pb-[100%]"></div>
                   <div className="my-5">2534 N MIAMI AVE</div>
                 </div>
               </div>
@@ -55,16 +51,12 @@ export default function Home() {
         </div>
 
         <div className="container max-w-screen-xl mx-auto my-16">
-          <div className="mx-auto mb-20 flex flex-col lg:flex-row-reverse mx-10">
+          <div className="mx-auto mb-20 flex flex-col lg:flex-row-reverse">
             <div className="flex-1 text-center lg:text-left">
               <div className="flex flex-col items-center lg:items-start">
-                <h3 className="text-gray-300 flex items-center font-light text-lg ">
-                  <span className="mr-4">02/</span>
-                  <span className="bg-gray-300 h-[1px] w-[130px]"></span>
-                  <span className="ml-2">Membership</span>
-                </h3>
+                <SectionHeader number="3" title="Membership" />
               </div>
-              <h3 className="text-4xl my-4 font-bold mx-10">
+              <h3 className="text-4xl my-4 font-bold mx-10 lg:mx-0">
                 Be part of the gang
               </h3>
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
@@ -84,14 +76,10 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row text-center lg:text-left">
               <div className="flex-1">
                 <div className="flex flex-col items-center lg:items-start">
-                  <h3 className="text-gray-300 flex items-center font-light text-lg ">
-                    <span className="mr-4">03/</span>
-                    <span className="bg-gray-300 h-[1px] w-[130px]"></span>
-                    <span className="ml-2">Join our Waiting List</span>
-                  </h3>
+                  <SectionHeader number="4" title="Join our Waiting List" />
                 </div>
 
-                <h2 className="mt-10 text-4xl lg:text-5xl font-bold tracking-wide mx-10">
+                <h2 className="mt-10 text-4xl lg:text-5xl font-bold tracking-wide mx-10 lg:mx-0">
                   Get the first 200 memberships
                 </h2>
 
@@ -115,11 +103,7 @@ export default function Home() {
               className="flex flex-col items-center
             "
             >
-              <h3 className="text-gray-500 flex items-center font-light text-lg ">
-                <span className="mr-4">04/</span>
-                <span className="bg-gray-500 h-[1px] w-[130px]"></span>
-                <span className="ml-2">Roadmap</span>
-              </h3>
+              <SectionHeader number="5" title="Roadmap" />
             </div>
 
             <h2 className="mt-10 text-5xl lg:text-7xl font-bold tracking-wide text-transparent text-center bg-clip-text bg-gradient-to-r from-[#BE2593] to-[#03CEBF]">
@@ -151,7 +135,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-4 text-neutral-600 mt-10 antialiased text-center">
+                <div className="grid grid-cols-1 lg:grid-cols-4 text-neutral-600 mt-10 antialiased text-center">
                   <div className="col-span-1 text-neutral-400">
                     <div className="font-bold mb-10 text-lg">Q1 2022</div>
                     <ul>

@@ -5,11 +5,7 @@ import cls from "classnames";
 
 export const Header = () => {
   return (
-    <div className="relative overflow-hidden max-w-full pb-8">
-      <div className={styles.heroBackground}></div>
-      <div className={styles.heroBackgroundInner}></div>
-      <div className="inset-0 bg-black opacity-50 z-10 absolute"></div>
-
+    <div className="relative overflow-hidden max-w-full pb-8 bg-[url('/assets/header-bg.png')] bg-cover bg-center]">
       <div className={cls(styles.heroContent, "m-10 mt-5 py-2 z-20")}>
         <div className="container mx-auto max-w-screen-xl">
           <div className="flex w-full justify-center mb-20">

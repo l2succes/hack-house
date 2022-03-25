@@ -4,10 +4,10 @@ import { SectionHeader } from "./SectionHeader";
 export const WhatISMHH = () => {
   return (
     <div className="my-4 flex flex-col items-center lg:items-start">
-      <SectionHeader number="0" title="What is Miami Hack House" />
+      <SectionHeader number="1" title="What is Miami Hack House" />
       <div className="grid grid-cols-1 lg:grid-cols-3">
         <div className="col-span-1 lg:col-span-2 text-center lg:text-left">
-          <h2 className="mt-10 text-4xl font-bold tracking-wide mx-10">
+          <h2 className="mt-10 text-4xl font-bold tracking-wide mx-10 lg:mx-0">
             Co-Working + Web3 + <span className="text-[#BE2593]">Miami</span>
           </h2>
 
@@ -18,7 +18,7 @@ export const WhatISMHH = () => {
             community, we will take and review applications to join.
           </p>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center lg:items-start">
             <div className="flex my-10 text-lg">
               <div className="text-[#BE2593] underline mr-10">
                 Physical House
