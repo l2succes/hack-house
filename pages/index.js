@@ -27,7 +27,7 @@ export default function Home() {
                   <span className="ml-2">Where?</span>
                 </h3>
               </div>
-              <h2 className="mt-10 text-5xl font-bold tracking-wide mx-20">
+              <h2 className="mt-10 text-4xl font-bold tracking-wide mx-10">
                 Wynwood is the place
               </h2>
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed max-w-4xl mx-auto px-10 lg:px-0">
@@ -64,7 +64,7 @@ export default function Home() {
                   <span className="ml-2">Membership</span>
                 </h3>
               </div>
-              <h3 className="text-5xl my-4 font-bold mx-20">
+              <h3 className="text-4xl my-4 font-bold mx-10">
                 Be part of the gang
               </h3>
               <p className="mt-8 text-lg font-light tracking-wide text-neutral-500 leading-relaxed">
@@ -91,7 +91,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <h2 className="mt-10 text-5xl font-bold tracking-wide mx-20">
+                <h2 className="mt-10 text-4xl lg:text-5xl font-bold tracking-wide mx-10">
                   Get the first 200 memberships
                 </h2>
 

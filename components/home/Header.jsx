@@ -16,14 +16,14 @@ export const Header = () => {
             <div className={cls(styles.logo)}></div>
             <div className="flex flex-grow"></div>
             <div className="flex items-center">
-              <menu className="flex justify-center self-center">
-                <li className="mx-4">
+              <menu className="text-sm lg:text-base flex justify-center self-center">
+                <li className="mx-1 lg:mx-4">
                   <a>Memberships</a>
                 </li>
-                <li className="mx-4">
+                <li className="mx-1 lg:mx-4">
                   <a>Blog</a>
                 </li>
-                <li className="mx-4">
+                <li className="mx-1 lg:mx-4">
                   <a>Plan</a>
                 </li>
               </menu>
@@ -32,7 +32,7 @@ export const Header = () => {
           <div className="mt-4">
             <div className="flex">
               <div className="py-2 antialiased flex-grow text-center lg:text-left">
-                <h1 className="font-sans font-semibold text-5xl lg:text-7xl pb-4">
+                <h1 className="font-sans font-semibold text-4xl lg:text-7xl pb-4">
                   Let&apos;s build the
                   <br />
                   future together

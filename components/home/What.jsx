@@ -7,7 +7,7 @@ export const WhatISMHH = () => {
       <SectionHeader number="0" title="What is Miami Hack House" />
       <div className="grid grid-cols-1 lg:grid-cols-3">
         <div className="col-span-1 lg:col-span-2 text-center lg:text-left">
-          <h2 className="mt-10 text-4xl font-bold tracking-wide mx-20">
+          <h2 className="mt-10 text-4xl font-bold tracking-wide mx-10">
             Co-Working + Web3 + <span className="text-[#BE2593]">Miami</span>
           </h2>
 
