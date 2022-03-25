@@ -47,7 +47,7 @@ export const MembershipCard: React.FC<MembershipCardProps> = (props) => {
   const is1x = props.type === "1x";
   return (
     <div className="bg-zinc-200	shadow-md max-w-md mx-auto p-2 lg:p-4 mt-[200px] rounded">
-      <div className="mx-auto mt-[-200px]">
+      <div className="mx-auto mt-[-200px] flex flex-col items-center">
         <Card {...props} />
       </div>
 

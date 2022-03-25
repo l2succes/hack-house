@@ -1,10 +1,18 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import { Header } from "../components/home/Header";
 import { SectionHeader } from "../components/home/SectionHeader";
 import { MembershipCard } from "../components/home/MembershipCard";
 import { WhatISMHH } from "../components/home/What";
+import sal from "sal.js";
 
 export default function Home() {
+  useEffect(() => {
+    sal({
+      threshold: 0.2,
+    });
+  });
+
   return (
     <div>
       <Head>
@@ -15,11 +23,19 @@ export default function Home() {
 
         <div className="bg-[#F6F8FA]">
           <div className="container max-w-screen-xl mx-auto py-10">
-            <div className="mx-auto mb-8">
+            <div
+              className="mx-auto mb-8"
+              data-sal="slide-up"
+              data-sal-delay="300"
+            >
               <WhatISMHH />
             </div>
 
-            <div className="mx-auto mt-20 text-center">
+            <div
+              className="mx-auto mt-20 text-center"
+              data-sal="slide-up"
+              data-sal-delay="300"
+            >
               <div className="flex items-center flex-col">
                 <SectionHeader number="2" title="Where?" />
               </div>
@@ -50,7 +66,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container max-w-screen-xl mx-auto my-16">
+        <div
+          className="container max-w-screen-xl mx-auto my-16"
+          data-sal="slide-up"
+          data-sal-delay="300"
+        >
           <div className="mx-auto mb-20 flex flex-col lg:flex-row-reverse">
             <div className="flex-1 text-center lg:text-left">
               <div className="flex flex-col items-center lg:items-start">
@@ -72,7 +92,11 @@ export default function Home() {
         </div>
 
         <div className="bg-[url('/assets/membership-section-bg.png')] bg-cover">
-          <div className="container max-w-screen-xl mx-auto py-16">
+          <div
+            className="container max-w-screen-xl mx-auto py-16"
+            data-sal="slide-up"
+            data-sal-delay="300"
+          >
             <div className="flex flex-col lg:flex-row text-center lg:text-left">
               <div className="flex-1">
                 <div className="flex flex-col items-center lg:items-start">
@@ -98,7 +122,11 @@ export default function Home() {
         </div>
 
         <div className="bg-black">
-          <div className="container max-w-screen-xl mx-auto py-16">
+          <div
+            className="container max-w-screen-xl mx-auto py-16"
+            data-sal="slide-up"
+            data-sal-delay="300"
+          >
             <div
               className="flex flex-col items-center
             "
